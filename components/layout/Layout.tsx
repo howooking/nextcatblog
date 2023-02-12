@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import MainNavigation from './MainNavigation';
 import { useNotificationContext } from '@/context/notificationContext';
-import Notification from '../ui/Notification';
+import Notification from '../ui/notification';
 
 export default function Layout({
   children,

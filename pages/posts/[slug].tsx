@@ -63,6 +63,7 @@ export default function SinglePost({ postData }: SinglePostProps): JSX.Element {
         <h1 className="text-center text-4xl font-bold">{title}</h1>
         <p className="text-center text-lg">{excerpt}</p>
         <address className="text-center text-gray-500">{formattedDate}</address>
+
         <Markdown
           className="prose mx-auto max-w-4xl"
           options={{
@@ -72,7 +73,7 @@ export default function SinglePost({ postData }: SinglePostProps): JSX.Element {
                 props: {
                   width: 300,
                   height: 300,
-                  className: 'rounded-xl mx-auto',
+                  className: 'rounded-md mx-auto',
                 },
               },
             },

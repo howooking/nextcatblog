@@ -3,11 +3,18 @@
 import classes from './notification.module.css';
 import { useNotificationContext } from '../../context/notificationContext';
 
-function Notification(props) {
+function Notification({
+  title,
+  message,
+  status,
+}: {
+  title: string;
+  message: string;
+  status: string;
+}): JSX.Element {
   const { hideNotification } = useNotificationContext();
 
   // eslint-disable-next-line react/prop-types
-  const { title, message, status } = props;
 
   let statusClasses = '';
 
